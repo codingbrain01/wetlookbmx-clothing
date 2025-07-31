@@ -2,7 +2,7 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
 function Navigation() {
-  const location = useLocation();
+  const { pathname } = useLocation();
   const underlineRef = useRef(null);
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -23,17 +23,17 @@ function Navigation() {
     const underline = underlineRef.current;
     const parentRect = homeRef.current.parentElement.getBoundingClientRect();
 
-    if (location.hash === "#/") {
+    if (pathname === "/") {
       underline.style.left = `${homeRect.left - parentRect.left}px`;
       underline.style.width = `${homeRect.width}px`;
-    } else if (location.hash === "#/about") {
+    } else if (pathname === "/about") {
       underline.style.left = `${aboutRect.left - parentRect.left}px`;
       underline.style.width = `${aboutRect.width}px`;
-    } else if (location.hash === "#/gallery") {
+    } else if (pathname === "/gallery") {
       underline.style.left = `${galleryRect.left - parentRect.left}px`;
       underline.style.width = `${galleryRect.width}px`;
     }
-  }, [location]);
+  }, [pathname]);
 
   return (
     <nav className="sticky top-0 z-50 flex justify-between items-center py-6 moving-gradient text-white relative shadow-lg">
