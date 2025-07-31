@@ -9,7 +9,7 @@ import Gallery from "./pages/Gallery";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/wetlookbmx-clothing">
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
