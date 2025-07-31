@@ -36,11 +36,11 @@ function Navigation() {
   }, [pathname]);
 
   return (
-    <nav className="sticky top-0 z-50 flex justify-between items-center py-6 moving-gradient text-white relative shadow-lg">
-      <div className="container mx-auto flex justify-between items-center px-4 md:px-6 lg:px-8">
+    <nav className="sticky top-0 z-50 flex justify-center items-center py-6 moving-gradient text-white relative shadow-lg">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center px-4 md:px-6 lg:px-8">
         <Link
           to="/"
-          className="text-3xl md:text-4xl font-bold font-sans text-white hover:text-gray-300 transition duration-300"
+          className="text-3xl md:text-4xl font-bold font-sans text-white hover:text-gray-300 transition duration-300 mb-4 md:mb-0"
         >
           <span className="border-2 border-white rounded-md overflow-hidden flex relative">
             <span className="bg-green-500 text-white px-1 border-r-2 border-black">
