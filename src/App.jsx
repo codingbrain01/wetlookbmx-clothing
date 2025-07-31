@@ -9,12 +9,12 @@ import Gallery from "./pages/Gallery";
 
 function App() {
   return (
-    <BrowserRouter basename="/wetlookbmx-clothing">
+    <BrowserRouter>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/wetlookbmx-clothing" element={<Home />} />
+        <Route path="/wetlookbmx-clothing/about" element={<About />} />
+        <Route path="/wetlookbmx-clothing/gallery" element={<Gallery />} />
         {/* Add more routes as needed */}
       </Routes>
       <Footer />
