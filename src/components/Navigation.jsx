@@ -39,7 +39,7 @@ function Navigation() {
     <nav className="sticky top-0 z-50 flex justify-between items-center py-6 moving-gradient text-white relative shadow-lg">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-6 lg:px-8">
         <a
-          href="/wetlookbmx-clothing"
+          href="https://codingbrain01.github.io/wetlookbmx-clothing/"
           className="text-3xl md:text-4xl font-bold font-sans text-white hover:text-gray-300 transition duration-300"
         >
           <span className="border-2 border-white rounded-md overflow-hidden flex relative">
