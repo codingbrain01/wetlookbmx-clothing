@@ -39,7 +39,7 @@ function Navigation() {
     <nav className="sticky top-0 z-50 flex justify-between items-center py-6 moving-gradient text-white relative shadow-lg">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-6 lg:px-8">
         <a
-          href="/wetlookbmx-clothing"
+          href="/"
           className="text-3xl md:text-4xl font-bold font-sans text-white hover:text-gray-300 transition duration-300"
         >
           <span className="border-2 border-white rounded-md overflow-hidden flex relative">
@@ -59,14 +59,13 @@ function Navigation() {
                   ? "text-lg md:text-xl font-sans text-white"
                   : "text-lg md:text-xl font-sans hover:text-gray-300 transition duration-300"
               }
-              end
             >
               Home
             </NavLink>
           </li>
           <li ref={aboutRef} className="relative">
             <NavLink
-              to="/about"
+              to="/wetlookbmx-clothing/about"
               className={({ isActive }) =>
                 isActive
                   ? "text-lg md:text-xl bebas-neue text-white"
@@ -78,7 +77,7 @@ function Navigation() {
           </li>
           <li ref={galleryRef} className="relative">
             <NavLink
-              to="/gallery"
+              to="/wetlookbmx-clothing/gallery"
               className={({ isActive }) =>
                 isActive
                   ? "text-lg md:text-xl bebas-neue text-white"
