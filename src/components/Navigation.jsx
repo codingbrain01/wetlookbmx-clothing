@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
 function Navigation() {
@@ -38,8 +38,8 @@ function Navigation() {
   return (
     <nav className="sticky top-0 z-50 flex justify-between items-center py-6 moving-gradient text-white relative shadow-lg">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-6 lg:px-8">
-        <a
-          href="#/"
+        <Link
+          to="/"
           className="text-3xl md:text-4xl font-bold font-sans text-white hover:text-gray-300 transition duration-300"
         >
           <span className="border-2 border-white rounded-md overflow-hidden flex relative">
@@ -49,7 +49,7 @@ function Navigation() {
             <span className="bg-black text-white px-1">Look</span>
             <span className="absolute inset-0 border-2 border-black rounded-md pointer-events-none"></span>
           </span>
-        </a>
+        </Link>
         <ul className="flex items-center space-x-6 relative">
           <li ref={homeRef} className="relative">
             <NavLink
