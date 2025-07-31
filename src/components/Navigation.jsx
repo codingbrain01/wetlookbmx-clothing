@@ -23,13 +23,13 @@ function Navigation() {
     const underline = underlineRef.current;
     const parentRect = homeRef.current.parentElement.getBoundingClientRect();
 
-    if (location.pathname === "/") {
+    if (location.pathname === "/wetlookbmx-clothing") {
       underline.style.left = `${homeRect.left - parentRect.left}px`;
       underline.style.width = `${homeRect.width}px`;
-    } else if (location.pathname === "/about") {
+    } else if (location.pathname === "/wetlookbmx-clothing/about") {
       underline.style.left = `${aboutRect.left - parentRect.left}px`;
       underline.style.width = `${aboutRect.width}px`;
-    } else if (location.pathname === "/gallery") {
+    } else if (location.pathname === "/wetlookbmx-clothing/gallery") {
       underline.style.left = `${galleryRect.left - parentRect.left}px`;
       underline.style.width = `${galleryRect.width}px`;
     }
@@ -39,7 +39,7 @@ function Navigation() {
     <nav className="sticky top-0 z-50 flex justify-between items-center py-6 moving-gradient text-white relative shadow-lg">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-6 lg:px-8">
         <a
-          href="/"
+          href="/wetlookbmx-clothing"
           className="text-3xl md:text-4xl font-bold font-sans text-white hover:text-gray-300 transition duration-300"
         >
           <span className="border-2 border-white rounded-md overflow-hidden flex relative">
@@ -59,6 +59,7 @@ function Navigation() {
                   ? "text-lg md:text-xl font-sans text-white"
                   : "text-lg md:text-xl font-sans hover:text-gray-300 transition duration-300"
               }
+              end
             >
               Home
             </NavLink>
