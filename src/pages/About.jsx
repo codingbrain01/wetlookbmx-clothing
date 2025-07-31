@@ -29,7 +29,7 @@ function About() {
           </blockquote>
         </div>
         <p className="text-lg mb-4">
-          Our group name is WetLook BMX Clothing, and we're all about the thrill
+          We are WetLook BMX Clothing, and we're all about the thrill
           of the ride and the joy of the community. We're a team of riders who
           support and encourage each other to push our limits and try new
           things.
